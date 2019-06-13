@@ -148,6 +148,7 @@ class MuteButton {
       (Field.OFFSET_Y - Gem.SIZE / 2) / 2,
       "muteButton",
     );
+    this.button.alpha = backgroundMusic.mute ? 0.5 : 1;
     this.button.onInputDown.add(this.onDown);
     this.button.onInputUp.add(this.onUp);
     this.button.anchor.set(0.5, 0.5);
