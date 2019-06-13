@@ -808,8 +808,8 @@ class Field {
     const g = this.gemMatrix; // Shortcut
     
     // Horizontal moves
-    for (let r = Field.WIDTH - 1; r >= 0; r--){
-      for (let c = Field.HEIGHT - 2; c >= 0; c--) {
+    for (let r = Field.HEIGHT - 1; r >= 0; r--){
+      for (let c = Field.WIDTH - 2; c >= 0; c--) {
         if (Field.isValidPos(r, c+1) && g[r][c].name === g[r][c+1].name) {
           if (Field.isValidPos(r, c-1)){
             if (Field.isValidPos(r-1, c-1) && g[r][c].name === g[r-1][c-1].name) {
@@ -846,8 +846,8 @@ class Field {
     }
 
     // Vertical moves
-    for (let c = Field.HEIGHT - 1; c >= 0; c--){
-      for (let r = Field.WIDTH - 2; r >= 0; r--) {
+    for (let c = Field.WIDTH - 1; c >= 0; c--){
+      for (let r = Field.HEIGHT - 2; r >= 0; r--) {
         if (Field.isValidPos(r+1, c) && g[r][c].name === g[r+1][c].name) {
           if (Field.isValidPos(r-1, c)){
             if (Field.isValidPos(r-1, c-1) && g[r][c].name === g[r-1][c-1].name) {
