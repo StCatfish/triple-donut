@@ -166,7 +166,11 @@ class MuteButton {
 
   shrink = async () => {
     const tween = game.add.tween(this.button).to(
-      { width: MuteButton.WIDTH / SELECTED_MULTIPLIER, height: MuteButton.HEIGHT / SELECTED_MULTIPLIER },
+      {
+        width: MuteButton.WIDTH / SELECTED_MULTIPLIER,
+        height: MuteButton.HEIGHT / SELECTED_MULTIPLIER,
+        alpha: backgroundMusic.mute ? 0.5 : 1,
+      },
       DURATION_SELECT,
       Phaser.Easing.Cubic.Out,
       true
