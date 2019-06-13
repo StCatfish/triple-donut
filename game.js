@@ -1222,29 +1222,29 @@ class RootState extends Phaser.State {
       };
     })
 
-    game.load.image("background", "test/images/backgrounds/background.jpg");
-    game.load.image("logo", "test/images/donuts_logo.png");
-    game.load.image("megaDonut", "test/images/donut.png");
-    game.load.image("startGameButton", "test/images/btn-play.png");
-    game.load.image("muteButton", "test/images/btn-sfx.png");
-    game.load.image("scoreBg", "test/images/bg-score.png");
-    game.load.image("timeUp", "test/images/text-timeup.png");
-    game.load.image("pointer", "test/images/game/hand.png");
+    game.load.image("background", "assets/images/background.jpg");
+    game.load.image("logo", "assets/images/logo.png");
+    game.load.image("megaDonut", "assets/images/megaDonut.png");
+    game.load.image("startGameButton", "assets/images/startGameButton.png");
+    game.load.image("muteButton", "assets/images/muteButton.png");
+    game.load.image("scoreBg", "assets/images/scoreBg.png");
+    game.load.image("timeUp", "assets/images/timeUp.png");
+    game.load.image("pointer", "assets/images/pointer.png");
 
-    game.load.spritesheet("particles", "test/images/particles/particle_spritesheet.png", Gem.SIZE, Gem.SIZE);
-    game.load.spritesheet("gems", "test/images/game/gem_spritesheet.png", Gem.SIZE, Gem.SIZE);
+    game.load.spritesheet("particles", "assets/images/particle_spritesheet.png", Gem.SIZE, Gem.SIZE);
+    game.load.spritesheet("gems", "assets/images/gem_spritesheet.png", Gem.SIZE, Gem.SIZE);
     
-    game.load.audio("backgroundMusic", "test/audio/background.mp3");
-    game.load.audio("kill", "test/audio/kill.mp3");
-    game.load.audio("select1", "test/audio/select-1.mp3");
-    game.load.audio("select2", "test/audio/select-2.mp3");
-    game.load.audio("select3", "test/audio/select-3.mp3");
-    game.load.audio("select4", "test/audio/select-4.mp3");
-    game.load.audio("select5", "test/audio/select-5.mp3");
-    game.load.audio("select6", "test/audio/select-6.mp3");
-    game.load.audio("select7", "test/audio/select-7.mp3");
-    game.load.audio("select8", "test/audio/select-8.mp3");
-    game.load.audio("select9", "test/audio/select-9.mp3");
+    game.load.audio("backgroundMusic", "assets/audios/backgroundMusic.mp3");
+    game.load.audio("kill", "assets/audios/kill.mp3");
+    game.load.audio("select1", "assets/audios/select1.mp3");
+    game.load.audio("select2", "assets/audios/select2.mp3");
+    game.load.audio("select3", "assets/audios/select3.mp3");
+    game.load.audio("select4", "assets/audios/select4.mp3");
+    game.load.audio("select5", "assets/audios/select5.mp3");
+    game.load.audio("select6", "assets/audios/select6.mp3");
+    game.load.audio("select7", "assets/audios/select7.mp3");
+    game.load.audio("select8", "assets/audios/select8.mp3");
+    game.load.audio("select9", "assets/audios/select9.mp3");
 
     game.load.script("webfont", "//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js");
   }
